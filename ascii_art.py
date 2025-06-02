@@ -24,12 +24,9 @@ def convert_to_ascii(intensity_matrix, ascii_chars):
         ascii_matrix.append(ascii_row)
     return ascii_matrix
 
-
-print(convert_to_ascii(intensity_matrix, ASCII_CHARS))
-
 def print_ascii_matrix(ascii_matrix):
     for row in ascii_matrix:
         line = [p*3 for p in row]
         print("".join(line))
 
-print_ascii_matrix(convert_to_ascii(intensity_matrix, ASCII_CHARS))    
+print_ascii_matrix(convert_to_ascii(intensity_matrix, ASCII_CHARS))   
